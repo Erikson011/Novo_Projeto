@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto",
+    "section": "",
+    "text": "Caminhos com o here()\n\n\n# install.packges('here')\n\nlibrary(here)# serve para substituir o caminho ode esta sua pasta e deixando de forma mais geral\n\nhere() starts at /home/erick/Área de Trabalho/Novo_Projeto\n\nlibrary(dplyr)\n\n\nAnexando pacote: 'dplyr'\n\n\nOs seguintes objetos são mascarados por 'package:stats':\n\n    filter, lag\n\n\nOs seguintes objetos são mascarados por 'package:base':\n\n    intersect, setdiff, setequal, union\n\nhere::here()\n\n[1] \"/home/erick/Área de Trabalho/Novo_Projeto\"\n\nhere::here('styles.css')\n\n[1] \"/home/erick/Área de Trabalho/Novo_Projeto/styles.css\"\n\n\n\nBônus! trocar idioma(no _quarto.yml)\n\n\nChunks com #|\n\n\n\n\n\no mais honrado!!!\n\n\n\n\n\n\n\n\n\n\no mais honrado!!\n\n\n\n\n\ncitações usando o visual editor\n\n\nknitr::write_bib(c(\"here\",\"tidyverse\"), \"packages.bib\")\n\n\nknitr::write_bib(\"here\", \"packoges.bib\")\n\nfudo fulano @turing1937, @stoica2018, blá bla blá.tidverse: @tidyverse2019 e @R-tidyverse. Here: @R-here\n\ninclude ou child\n\n\n#{{&lt; include About.qmd &gt;}}\n\n6.Usando parametros\n\nparams$data\n\n[1] \"31-08-2025\"\n\n\n\nIncline + formatação\n\nbase dos pinguins tem r nrow(palmerpenguins::penguins)\nlinhas.Os pinguins estudados na base r\nunique(palmerpenguins::penguins)\n\nespecies &lt;- palmerpenguins::penguins %&gt;%\n  dplyr::pull(species) %&gt;% unique() %&gt;% \n  knitr::combine_words()\n\n\n\npi&lt;- round(pi,2)\npi_reais&lt;- scales::dollar(pi, prefix = \"R$\", decimal.mark = \",\", big.mark = \".\")\n\n\npersonalizar templates\nMermaid\n\n\n\n\n\n\nflowchart LR\n  A[Hord edge]---&gt; B(Round edge)\n  B--&gt; C{Decision}\n  C--&gt; D[Result one]\n  C--&gt; E[Result two]\n\n\n\n\n\n\n\n\nFontes\n\nsite: font Awesome extension for Quarto\n\nfontawesome::fa(\"thumbs-up\")  # Tamanho 2x"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]

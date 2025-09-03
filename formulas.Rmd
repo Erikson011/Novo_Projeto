@@ -1,0 +1,26 @@
+---
+title: "Fórmula de Dados de Painel"
+output: 
+  pdf_document: 
+    keep_tex: yes
+  html_document: default
+---
+
+## Modelo de Efeitos Fixos com Dummies de Tempo
+
+A equação do modelo é dada por:
+
+$$
+CT_{it} = \alpha_1 + \sum_{i=2}^n \alpha_i D_i + \sum_{t=2}^T \phi_t T_t + \beta_2 PF_{it} + u_{it}
+$$
+
+**Onde:**
+- $CT_{it}$: Variável dependente.
+- $D_i$: Dummy para o efeito fixo da entidade $i$.
+- $T_t$: Dummy para o efeito fixo do tempo $t$.
+- $PF_{it}$: Variável independente de interesse.
+- $u_{it}$: Termo de erro.
+---
+
+```{}
+```
